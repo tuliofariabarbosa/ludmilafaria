@@ -1,0 +1,543 @@
+/* Remover formatação padrão, zerar css */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* barra de rolagem */
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: var(--cor-enfatica);
+}
+
+@layer standard-features {
+/* Fontes utilizadas */
+    @font-face {
+        font-family: oso-black;
+        src: url(../fonts/OpenSauceOne-Black.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: oso-medium;
+        src: url(../fonts/OpenSauceOne-Medium.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: oso-bold;
+        src: url(../fonts/OpenSauceOne-Bold.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: oso-regular;
+        src: url(../fonts/OpenSauceOne-Regular.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: oso-light;
+        src: url(../fonts/OpenSauceOne-Light.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: ps-black;
+        src: url(../fonts/ProductSans-Black.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: ps-bold;
+        src: url(../fonts/OpenSauceOne-Bold.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: ps-medium;
+        src: url(../fonts/ProductSans-Medium.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: ps-regular;
+        src: url(../fonts/ProductSans-Regular.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: ps-light;
+        src: url(../fonts/ProductSans-Light.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: ps-thin;
+        src: url(../fonts/ProductSans-Thin.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    :root{
+        --cor-enfatica: #29b1c6;
+        --cor-texto: #292929;
+        --cor-textosecundaria: #acaaaa;
+    }
+}
+
+.header{
+    display: none;
+}
+ 
+.core{
+    border: solid;
+    max-width: 100%;
+    height: 550px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6) url(../img/advogada-lgpd-ludmila.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.core .core__banner p{
+    color: white;
+    font-family: oso-regular;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.barra-horizontal{
+    border-bottom: solid 1.7px var(--cor-enfatica);
+    width: 75px;
+    margin-top: 18px;
+    position: relative;
+    animation: firstanimation 2.7s infinite;
+} 
+
+@keyframes firstanimation{
+    0%{
+        left: 25px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        left: 260px;
+    }
+}
+
+.core .core__banner h1{
+    color: white;
+    padding: 10px 10px 30px 10px;
+    font-family: ps-black;
+    letter-spacing: 0.08rem;
+    font-size: 2.1rem;
+}
+
+.core__banner a{
+    padding: 13px 42px 13px 42px;
+    font-family: ps-black;
+    letter-spacing: 0.06rem;
+    background-color: var(--cor-enfatica) ;
+    border: none;
+    color: white;
+    border-radius: 23px;
+    text-decoration: none;
+    font-size:0.8rem;  
+    cursor: pointer;
+}
+
+.core__banner--button:hover{
+    transform:scale(1.05,1.05);
+    transition: .3s ;   
+}
+
+.phrase{
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    font-family: oso-regular;
+    max-width: 460px;
+    text-align: center;
+    padding: 56px 16px 26px 16px;
+    margin: auto;
+}
+
+.phrase p{
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+.phrase i{
+    color: var(--cor-enfatica);
+    font-size: 45px;
+    padding: 30px 0px 30px 0px;
+}
+
+.containerarticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.containerarticle__firstarticle{
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.containerarticle__firstarticle img{
+    max-width: 380px;
+}
+
+.containerarticle__firstarticle h2{
+    color: var(--cor-enfatica);
+    font-family: ps-black;
+    font-size:1.4rem;
+    padding: 20px 5px 5px 5px;
+}
+
+.containerarticle__firstarticle p{
+    font-family: oso-regular;
+    font-size: 0.8rem;
+    padding:5px 5px 15px 5px;
+    color: var(--cor-texto);
+    letter-spacing: 0.03rem; 
+    line-height: 1.5rem;
+    max-width: 400px;
+}
+
+.containerarticle__firstarticle a{
+    padding: 13px 38px 13px 38px;
+    font-family: ps-black;
+    letter-spacing: 0.06rem;
+    background-color: var(--cor-enfatica) ;
+    border: none;
+    color: white;
+    border-radius: 23px;
+    text-decoration: none;
+    font-size:0.8rem;  
+    cursor: pointer;
+}
+
+.containerarticle__firstarticle--button{
+    padding: 10px 10px 50px 10px;
+}
+
+.containerarticle__firstarticle--button:hover{
+    transform:scale(1.05,1.05);
+    transition: .3s ;
+}
+
+.containerarticle__secondarticle{
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:25px;
+}
+
+.containerarticle__secondarticle img{
+    max-width: 380px;
+}
+
+.containerarticle__secondarticle h2{
+    color: var(--cor-enfatica);
+    font-family: ps-black;
+    font-size:1.4rem;
+    padding: 20px 5px 5px 5px;
+}
+
+.containerarticle__secondarticle p{
+    font-family: oso-regular;
+    font-size: 0.8rem;
+    padding:5px 5px 15px 5px;
+    color: var(--cor-texto);
+    letter-spacing: 0.03rem; 
+    line-height: 1.5rem;
+    max-width: 400px;
+}
+
+.containerarticle__secondarticle a{
+    padding: 13px 38px 13px 38px;
+    font-family: ps-black;
+    letter-spacing: 0.06rem;
+    background-color: var(--cor-enfatica) ;
+    border: none;
+    color: white;
+    border-radius: 23px;
+    text-decoration: none;
+    font-size:0.8rem;  
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__txt{
+    font-size: 0.7rem;
+    font-family: oso-regular;
+    color: var(--cor-textosecundaria) ;
+    letter-spacing: 0.03rem;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    max-width: 385px;
+}
+
+.footer__icons a{
+    font-size: 1.4rem;
+    color: var(--cor-textosecundaria);
+    align-items: center;
+    padding: 20px 10px 30px 10px;
+}
+
+.footer__icons a i:hover{
+    color:var(--cor-enfatica);
+    transform:scale(1.18,1.18);
+    transition: .2s; 
+}
+
+.cookies{
+    display: none;
+}
+.cookies.show{
+    display: block;
+}
+
+.cookies__content{
+    position: fixed;
+    bottom:3%;
+    left: 4%;
+    width: 95%;
+    max-width: 280px;
+    background: #fff;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 5px rgba(0,0,0,0.02);
+    border: solid 2px #29b1c6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookies__content h2{
+    margin: 10px 0px;
+    font-size: 1.1rem;
+    color: var(--cor-enfatica);
+    text-align: center;
+    font-family: ps-bold;
+}
+
+.cookies__content p{
+    margin: 0px 0px 15px 0px;
+    color: var(--cor-textosecundaria);
+    font-size: 0.67rem;
+    text-align: center;
+    font-family: oso-regular;
+    line-height: 1.1rem;
+}
+
+.cookies__content p a{
+    color: var(--cor-enfatica);
+}
+
+.cookies__content--btn button{
+    padding: 10px 20px;
+    border:none;
+    outline: none;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #29b1c6;
+}
+
+.cookies__content--btn button:hover{
+    transform: scale(0.92);
+    transition: 0.2s;
+}
+
+/* formato tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .containerarticle{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .core{
+        background: rgba(0, 0, 0, 0.6) url(../img/lawyer-brasil.webp);
+        background-attachment: fixed;
+        background-position: top;
+        border: none;
+    }
+
+    .core .core__banner h1{
+        font-size: 2.4rem;
+    }
+
+    .containerarticle__secondarticle{
+        padding-top: 0px;
+    }
+
+    .phrase{
+        max-width: 90%;
+    }
+
+}
+
+/* formato desktop */
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    .header{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height: 65px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .logo img{
+        width: 170px;
+        padding-top: 6px;
+    }
+
+    .navlinks ul{
+        display: flex;
+        gap: 25px;
+    }
+
+    .navlinks ul li{
+        list-style: none;
+    }
+
+    .navlinks ul li a{
+        text-decoration: none;
+        color: var(--cor-enfatica);
+        font-family: ps-regular;
+        font-size: 1rem;
+        letter-spacing: 0.05rem;
+        cursor: pointer;
+    }
+    .navlinks ul li a:hover{
+        color:var(--cor-textosecundaria);
+        transition: .3s;
+    }
+
+    .core{
+        background: rgba(0, 0, 0, 0.6) url(../img/lawyer-brasil.webp);
+        background-attachment: fixed;
+        background-position: top;
+        border: none;
+    }
+
+    .core .core__banner h1{
+        font-size: 2.6rem;
+    }
+
+    .phrase{
+        max-width: 90%;
+    }
+
+    .containerarticle{
+        flex-direction: row;
+        gap: 100px;
+    }
+    
+    .containerarticle__secondarticle{
+        padding-top: 0px;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* widescreen */
+@media screen and (min-width: 1441px){
+    .core{
+        background: rgba(0, 0, 0, 0.6) url(../img/lawyer-brasil.webp);
+        background-attachment: fixed;
+        background-position: top;
+        border: none;
+    }
+
+    .core .core__banner h1{
+        font-size: 3.3rem;
+    }
+
+    @keyframes firstanimation{
+        0%{
+            left: 90px;
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            left: 390px;
+        }
+    }
+
+    .containerarticle{
+        flex-direction: row;
+        gap:80px;
+    }
+    .containerarticle__secondarticle{
+            padding-top: 0px;
+        }   
+
+    .phrase{
+        max-width: 100%;
+        margin-top: 70px;
+    }
+
+    .phrase i{
+        padding: 90px 10px 90px 10px; 
+    }
+
+    .footer{
+        padding-top: 50px;
+    }
+    
+}
+
