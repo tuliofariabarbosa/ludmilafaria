@@ -80,20 +80,6 @@
         font-style: normal;
     }
 
-    @font-face {
-        font-family: ps-light;
-        src: url(../fonts/ProductSans-Light.ttf) format(truetype);
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: ps-thin;
-        src: url(../fonts/ProductSans-Thin.ttf) format(truetype);
-        font-weight: normal;
-        font-style: normal;
-    }
-
     :root{
         --cor-enfatica: #29b1c6;
         --cor-texto: #292929;
@@ -145,7 +131,7 @@
         opacity: 1;
     }
     100%{
-        left: 315px;
+        left: 280px;
     }
 }
 
