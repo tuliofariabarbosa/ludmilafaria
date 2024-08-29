@@ -138,14 +138,14 @@
 
 @keyframes firstanimation{
     0%{
-        left: 25px;
+        left: 0px;
         opacity: 0;
     }
     50%{
         opacity: 1;
     }
     100%{
-        left: 260px;
+        left: 315px;
     }
 }
 
@@ -400,14 +400,29 @@
     }
 
     .core{
-        background: rgba(0, 0, 0, 0.6) url(../img/lawyer-brasil.webp);
+        background: rgba(0, 0, 0, 0.6) url(../img/ludmila-faria-direito-digital.webp);
         background-attachment: fixed;
         background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
         border: none;
     }
 
     .core .core__banner h1{
         font-size: 2.4rem;
+    }
+
+    @keyframes firstanimation{
+        0%{
+            left: 50px;
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            left: 480px;
+        }
     }
 
     .containerarticle__secondarticle{
@@ -416,6 +431,7 @@
 
     .phrase{
         max-width: 90%;
+        font-size: 1.5rem;
     }
 
 }
@@ -452,7 +468,7 @@
     .navlinks ul li a{
         text-decoration: none;
         color: var(--cor-enfatica);
-        font-family: ps-regular;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 1rem;
         letter-spacing: 0.05rem;
         cursor: pointer;
@@ -463,18 +479,36 @@
     }
 
     .core{
-        background: rgba(0, 0, 0, 0.6) url(../img/lawyer-brasil.webp);
+        background: rgba(0, 0, 0, 0.6) url(../img/ludmila-faria-direito-digital.webp);
         background-attachment: fixed;
         background-position: top;
         border: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @keyframes firstanimation{
+        0%{
+            left: 90px;
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            left: 490px;
+        }
     }
 
     .core .core__banner h1{
         font-size: 2.6rem;
     }
 
+    
+
     .phrase{
         max-width: 90%;
+        font-size: 1.4rem;
     }
 
     .containerarticle{
@@ -495,7 +529,9 @@
 /* widescreen */
 @media screen and (min-width: 1441px){
     .core{
-        background: rgba(0, 0, 0, 0.6) url(../img/lawyer-brasil.webp);
+        background: rgba(0, 0, 0, 0.6) url(../img/ludmila-faria-direito-digital.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: top;
         border: none;
@@ -505,22 +541,26 @@
         font-size: 3.3rem;
     }
 
+    .core .core__banner p{
+        font-size: 1.2rem;
+    }
+
     @keyframes firstanimation{
         0%{
-            left: 90px;
+            left: 120px;
             opacity: 0;
         }
         50%{
             opacity: 1;
         }
         100%{
-            left: 390px;
+            left: 630px;
         }
     }
 
     .containerarticle{
         flex-direction: row;
-        gap:80px;
+        gap:100px;
     }
     .containerarticle__secondarticle{
             padding-top: 0px;
@@ -529,6 +569,11 @@
     .phrase{
         max-width: 100%;
         margin-top: 70px;
+        font-size: 1.7rem;
+    }
+
+    .phrase p{
+        font-size: 1.3rem;
     }
 
     .phrase i{
