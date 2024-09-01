@@ -143,6 +143,10 @@
     font-size: 2.1rem;
 }
 
+#cs{
+    font-size: 1.97rem;
+}
+
 .core__banner a{
     padding: 13px 42px 13px 42px;
     font-family: ps-black;
@@ -398,6 +402,10 @@
         font-size: 2.4rem;
     }
 
+    #cs{
+        font-size: 2.4rem;
+    }
+
     @keyframes firstanimation{
         0%{
             left: 50px;
@@ -490,7 +498,9 @@
         font-size: 2.6rem;
     }
 
-    
+    #cs{
+        font-size: 2.6rem;
+    }
 
     .phrase{
         max-width: 90%;
