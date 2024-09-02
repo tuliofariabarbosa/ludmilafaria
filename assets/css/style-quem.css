@@ -80,6 +80,17 @@
             color: white;
         }
 }
+
+/* barra de rolagem */
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: var(--cor-enfatica);
+}
+
 .header{
     display: none;
 }
