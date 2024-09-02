@@ -296,10 +296,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 90%;
+    margin: auto;
 }
 
 .footer__txt{
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-family: oso-regular;
     color: var(--cor-textosecundaria) ;
     letter-spacing: 0.03rem;
