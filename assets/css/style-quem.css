@@ -454,22 +454,14 @@ span{
         z-index: 1;
     }
 
-    p{
-        font-size: 0.90rem;
-        letter-spacing: 0.01rem;
-    }
-
     .logo img{
         width: 170px;
         padding-top: 6px;
-        display: flex;
-        justify-content: flex-start;
     }
 
     .navlinks ul{
         display: flex;
         gap: 25px;
-        justify-content: flex-end;
     }
 
     .navlinks ul li{
