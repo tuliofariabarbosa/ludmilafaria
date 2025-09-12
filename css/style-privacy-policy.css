@@ -1,0 +1,91 @@
+
+body {
+    font-family: 'space grotesk', Arial, sans-serif;
+    color: var(--color--white);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color--slimdarkgrey);
+    letter-spacing: 0.06rem;
+}
+  .privacy-policy-container {
+    max-width: 800px;
+    margin: 32px auto;
+    background: var(--color--darkgrey);
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 32px 20px;
+    width: 95%;
+    color: var(--color--white);
+}
+  .privacy-policy-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color--white);
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: 'michroma', sans-serif;
+}
+  .privacy-policy-container h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color--emphasis);
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+  .privacy-policy-container p,
+  .privacy-policy-container ul {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+  .privacy-policy-container ul {
+    padding-left: 22px;
+}
+  .privacy-policy-container li {
+    margin-bottom: 8px;
+}
+  .privacy-policy__backhome-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--color--emphasis, #e8ff3c);
+    color: var(--color--darkgrey);
+    padding: 14px 36px;
+    border-radius: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: background 0.2s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+  .privacy-policy__backhome-btn:hover {
+    background: var(--color--emphasis);
+    color: var(--color--darkgrey);
+    transform: translateY(-2px) scale(1.03);
+}
+  .privacy-policy__backhome-btn i {
+    font-size: 1.2em;
+}
+.privacy-policy__backhome {
+  display: flex; 
+  justify-content: center; 
+  margin-bottom: 50px;
+}
+
+
+@media (max-width: 600px) {
+    .privacy-policy-container {
+        padding: 18px 6px;
+        width: 95%;
+    }
+    .privacy-policy-container h1 {
+        font-size: 1.3rem;
+    }
+    .privacy-policy-container h2 {
+        font-size: 1.05rem;
+    }
+}
+

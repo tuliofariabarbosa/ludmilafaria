@@ -1,0 +1,115 @@
+
+body{
+    background: linear-gradient(135deg, var(--color--emphasis) 30%, #dc6ebe 80%);
+}
+
+
+::placeholder{
+    font-size: 0.8rem;
+    letter-spacing: 0.06rem;
+    color:var(--color--plaster);
+}
+
+
+.contact {
+  max-width: 400px;
+  width: 95%;
+  margin: 70px auto;
+  padding: 32px 24px;
+  background: var(--color--slimdarkgrey);
+  border-radius: 12px;
+  /* box-shadow: 0 2px 16px rgba(255, 255, 255, 0.583); */
+  font-family: 'Open Sans', sans-serif;
+}
+.contact__form--img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.contact__form--title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  color: var(--color--white);
+  font-weight: 700;
+  font-family: 'michroma', sans-serif;
+}
+.contact__form--label {
+  color: var(--color--lightgrey);
+  font-weight: 500;
+  font-size: 0.8rem;
+  font-family: 'space grotesk', sans-serif;
+  letter-spacing: 0.07rem;
+  display: block;
+  margin-bottom: 6px;
+  padding-bottom: 15px;
+}
+.contact__form--input,
+.contact__form--textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 18px;
+  border: 1px solid var(--color--lightgrey);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'space grotesk', sans-serif;
+  letter-spacing: 0.06rem;
+  background: var(--color--lightgrey);
+  transition: border-color 0.2s;
+  color: var(--color--emphasis);
+}
+.contact__form--input:focus,
+.contact__form--textarea:focus {
+  border-color: var(--color--emphasis);
+  outline: none;
+}
+.contact__form--note {
+  font-size: 0.7rem;
+  color: var(--color--emphasis);
+  padding-top: 15px ;
+  font-family: 'space grotesk', sans-serif;
+  letter-spacing: 0.06rem;
+  text-align: center;
+}
+.contact__form--button {
+  width: 100%;
+  padding: 12px 0;
+  background: var(--color--emphasis);
+  color: var(--color--darkgrey);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.contact__form--button i{
+    padding-left:12px;
+}
+.contact__form--button:hover {
+  background:var(--color--secondary);
+  color: var(--color--white);
+}
+
+
+/* medium smartphones and tablets (largura até 768px) */
+@media only screen and (min-width:601px) and (max-width: 768px){
+    .homelink__button{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:769px) {
+    
+    .contact{
+       margin-top: 80px;     
+    }
+    .homelink__button{
+        display: none;
+    }
+
+}

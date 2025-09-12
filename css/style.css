@@ -1,0 +1,250 @@
+.core{
+    display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	height: 57vh;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../assets/malta-is.webp');
+    justify-content: center;
+    background-attachment: fixed;
+    align-items: center;
+    background-position: center 40px; /* move a imagem 60px para baixo */
+    }                  
+.core{
+    color: var(--color--white);
+}
+.core p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08rem; 
+}
+.core__bar{
+    display: flex;
+    width: 70px;
+    height: 1px;
+    padding: 15px 10px 10px 10px;
+}
+.core__bar > div{
+    width: 35px;
+    height: 1px;
+}
+.core__bar--color1{
+    animation: blink 1.5s infinite step-end;
+    border-bottom: 1px solid var(--color--emphasis);
+} 
+@keyframes blink {
+    0% {
+    border-color:var(--color--emphasis);
+}     
+    50%{
+    border-color:var(--color--secondary);
+}
+}
+.core__bar--color2{
+    animation: blinkt 1.5s infinite step-end;
+    border-bottom: 1px solid var(--color--emphasis); 
+}
+@keyframes blinkt {
+    0%{
+    border-color:var(--color--secondary);
+}     
+    50%{
+    border-color:var(--color--emphasis);
+}
+}
+.core h1{
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+.phrase{
+    width: 100%;
+    height: 45vh;
+    background-color: var(--color--slimdarkgrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+}
+.phrase h3{
+    text-align: center;
+    font-family: 'open-sans', sans-serif;
+    font-weight: 300;
+    color: rgb(225, 225, 225);
+    letter-spacing: 0.10rem;
+    font-size: 1rem;
+    line-height: 20px;
+}
+.phrase p{  
+    font-family: 'opem-sans', sans-serif;
+    line-height: 32px;
+    font-size: 0.8rem;
+    color: rgb(136, 136, 136);
+}
+.phrase i{
+    color:var(--color--emphasis);
+    size: 30px;
+    animation-duration:8s;
+}
+.fa-solid {
+    font-size: 30px;
+    padding: 30px 20px 20px 20px;
+}
+
+
+.hello{
+    background-color: var(--color--slimdarkgrey);
+    color: var(--color--white);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+.hello__img img{
+    width: 100%;
+}
+#living-room{
+    display: none;
+}
+.hello__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px 70px 15px;
+}
+.hello__text h3{
+    color: var(--color--emphasis);
+    letter-spacing: 0.08rem;
+    padding: 15px 15px 8px 15px;
+    font-size: 1.6rem;
+}
+.hello__text p{
+    padding: 20px 8px 30px 8px;
+}
+.hello__text a{
+    color: #1a1a1a;
+    background-color:var(--color--emphasis);
+    padding: 15px 42px 15px 42px;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease-in-out;
+} 
+.hello__text a:hover {
+    transform: scale(1.05);
+} 
+strong{
+    color:var(--color--emphasis);
+}
+
+/* only responsive core txt */
+@media only screen and (max-width:340px){
+    
+    .core h1{
+        font-size: 1.3rem;
+    }
+    .core p{
+        font-size:0.7rem;
+    }
+}
+
+
+/* medium smartphones and tablets (largura até 768px) */
+@media only screen and (min-width:601px) and (max-width: 768px) {
+
+    .core{
+	    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('../malta-is.webp');
+        height: 40vh;
+    }
+    .core__bar{
+        display: flex;
+        padding: 20px 0px 15px 0px;
+    }
+
+    .hello__img{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    .hello__img img{
+         padding:15px
+    }
+    #living-room{
+        display: block;
+    }
+}
+
+/* laptops and tablets */
+@media only screen and (min-width:769px) {
+
+
+    .core{
+	    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('../assets/lawyer-ludmila-faria.webp');
+        justify-content: center;
+        height: 68vh;
+    }
+    .intro__titles--line {
+     display: inline;
+    }
+    .core__bar{
+        display: flex;
+        padding: 25px 0px 13px 0px;
+    }
+    .core h1{
+        font-size: 2.5rem;
+    }
+
+
+    .phrase{
+        height: 45vh;
+        padding-top: 35px;
+    }
+    .phrase h3{
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+     .fa-solid{
+        font-size: 50px;
+        padding-top: 70px;
+    }
+
+
+    .hello__text{
+        max-width:1070px;
+        margin: auto;
+        line-height: 25px;
+    }
+    .hello__img{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    .hello__img img{
+         padding:30px;
+    }
+    #living-room{
+        display: inline;
+    }
+
+
+    /* larger desktops and monitors */
+@media only screen and (min-width:1280px){
+   .hello__img{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .hello__img img{
+        width: 80%;
+    }
+}
+}
