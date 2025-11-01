@@ -36,7 +36,7 @@ body{
   font-size: 1.5rem;
   color: var(--color--white);
   font-weight: 700;
-  font-family: 'michroma', sans-serif;
+  font-family: 'Michroma', sans-serif;
 }
 .contact__form--label {
   color: var(--color--lightgrey);
@@ -96,20 +96,11 @@ body{
 }
 
 
-/* medium smartphones and tablets (largura até 768px) */
-@media only screen and (min-width:601px) and (max-width: 768px){
-    .homelink__button{
-        display: none;
-    }
-}
-
 @media only screen and (min-width:769px) {
     
     .contact{
        margin-top: 80px;     
     }
-    .homelink__button{
-        display: none;
-    }
+  
 
 }

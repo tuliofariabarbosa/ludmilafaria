@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'space grotesk', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     color: var(--color--white);
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body {
     color: var(--color--white);
     margin-bottom: 24px;
     text-align: center;
-    font-family: 'michroma', sans-serif;
+    font-family: 'Michroma', sans-serif;
 }
   .privacy-policy-container h2 {
     font-size: 1.25rem;
@@ -62,8 +62,8 @@ body {
     cursor: pointer;
 }
   .privacy-policy__backhome-btn:hover {
-    background: var(--color--emphasis);
-    color: var(--color--darkgrey);
+    background: var(--color--secondary);
+    color: var(--color--white);
     transform: translateY(-2px) scale(1.03);
 }
   .privacy-policy__backhome-btn i {

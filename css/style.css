@@ -11,8 +11,6 @@
     background-attachment: fixed;
     align-items: center;
     background-position: center 40px; /* move a imagem 60px para baixo */
-    }                  
-.core{
     color: var(--color--white);
 }
 .core p{
@@ -81,14 +79,14 @@
     line-height: 20px;
 }
 .phrase p{  
-    font-family: 'opem-sans', sans-serif;
+    font-family: 'open-sans', sans-serif;
     line-height: 32px;
     font-size: 0.8rem;
     color: rgb(136, 136, 136);
 }
 .phrase i{
     color:var(--color--emphasis);
-    size: 30px;
+    font-size: 30px;
     animation-duration:8s;
 }
 .fa-solid {
@@ -162,7 +160,7 @@ strong{
 @media only screen and (min-width:601px) and (max-width: 768px) {
 
     .core{
-	    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('../malta-is.webp');
+	    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('../assets/lawyer-ludmila-faria.webp');
         height: 40vh;
     }
     .core__bar{
@@ -234,7 +232,7 @@ strong{
     #living-room{
         display: inline;
     }
-
+}
 
     /* larger desktops and monitors */
 @media only screen and (min-width:1280px){
@@ -246,5 +244,4 @@ strong{
     .hello__img img{
         width: 80%;
     }
-}
 }

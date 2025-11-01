@@ -33,6 +33,21 @@
     </script>
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo-link">
+                <img src="../assets/logo-justiça-direito-advogado-advogacia.webp" alt="Logo with symbol of law and justice" class="header__logo">
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menu" title="Menu">&#9776;</button>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="https://www.ludmilafaria.com">Home</a></li>
+                    <li><a href="https://www.ludmilafaria.com/about-me">About Me</a></li>
+                    <li><a href="https://www.ludmilafaria.com/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="privacy-policy-container">
             <h1>Privacy Policy</h1>
@@ -102,7 +117,7 @@
             <h2>Consent</h2>
             <p>By accessing the website www.ludmilafaria.com.br and providing personal information on the platform, the user consents to this Privacy Policy.<br>
             By registering, the user acknowledges their rights to access, update, and request the removal of their personal data and guarantees the accuracy of the information provided.</p>
-            <p>The user has the right to withdraw their consent at any time. To do so, they must contact us via email at ______, expressly stating their desire.</p>
+            <p>The user has the right to withdraw their consent at any time. To do so, they must contact us via email at contato@ludmilafaria.com, expressly stating their desire.</p>
 
             <h2>User Commitment</h2>
             <p>The user agrees to make appropriate use of the content and information that Ludmila Faria offers on the website, including, but not limited to:</p>
@@ -123,7 +138,63 @@
         </div>
     </main>
     
-
+    <footer>
+        <div class="footer">
+            <div class="footer__branding">
+                <div class="footer__branding--logo">
+                    <a href="https://napratica.org.br/" target="_blank">
+                        <img src="../assets/logo-napratica-fundacao-estudar-bh.webp" alt="Logo of a corporate education company">
+                    </a>
+                    <p>Empowering creative minds.</p>
+                </div>  
+                <div class="footer__branding--social">
+                    <a href="https://www.linkedin.com/in/ludmilafariabarbosa/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in" id="linkedin"></i>
+                    </a>
+                    <a href="https://x.com/ludmilafariab" target="_blank">
+                        <i class="fa-brands fa-x-twitter" id="twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <div class="footer__contact--form">
+                    <h4>Let's connect!</h4>
+                        <div class="footer__form--input">
+                            <form action="https://getform.io/f/adrddpra" method="POST" class="footer__form--getform">
+                                <input type="email" name="email" placeholder="Enter your email" required>
+                                <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    <p>Don't worry, I don't like spam either.</p>
+                </div>   
+                <div class="footer__contact--contact">
+                    <div class="footer__contact--contact--phone">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/35699216739" target="_blank">Reach me on WhatsApp</a>
+                    </div>
+                    <div class="footer__contact--contact--email">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:contato@ludmilafaria.com.br" target="_blank">contato@ludmilafaria.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p>Copyright @ tulio.digital 2025</p>
+            <a href="about-me.html">- About Me</a>
+        </div>
+    </footer>
     
+    <div class="cookies-msg" id="cookies-msg">
+        <div class="cookies__txt">
+            <p>This website uses cookies to enhance your experience. By continuing to browse, you agree to our use of cookies.</p>
+            <div class="cookies__txt--btn">
+                <button onclick="accept()">Accept</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/menu-index.js"></script>
+    <script src="../js/cookies.js"></script>
 </body>
 </html>
